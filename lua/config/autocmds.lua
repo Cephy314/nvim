@@ -23,14 +23,14 @@ autocmd("FileType", {
     end,
 })
 
--- Show different EOL glyphs for LF vs CRLF
-autocmd({ "BufReadPost", "BufFilePost" }, {
-    group = augroup("eol_marker", { clear = true }),
-    callback = function()
-      if vim.bo.fileformat == "dos" then
-        vim.opt_local.listchars:append({ eol = "␍␊" }) -- CRLF
-      else
-        vim.opt_local.listchars:append({ eol = "↴" })   -- LF
-      end
-    end,
-})
+-- -- Show different EOL glyphs for LF vs CRLF
+-- autocmd({ "BufReadPost", "BufFilePost" }, {
+--     group = augroup("eol_marker", { clear = true }),
+--     callback = function()
+--       if vim.bo.fileformat == "dos" then
+--         vim.opt_local.listchars:append({ eol = "␍␊" }) -- CRLF
+--       else
+--         vim.opt_local.listchars:append({ eol = "↴" })   -- LF
+--       end
+--     end,
+-- })

@@ -1,5 +1,5 @@
 -- colorscheme.lua
--- https://github.com/Cephy314/nvim
+-- https://github.com/Cephy314/dotfiles
 -- ----------------------------------
 
 return {
